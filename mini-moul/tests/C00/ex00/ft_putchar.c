@@ -38,6 +38,21 @@ int main(void)
 	    {.desc = "ft_putchar('\\xFF')",
 	     .c = '\xFF',
 	     .expected = "\xFF"},
+	    {.desc = "OWN TEST: ft_putchar('\a')",
+	     .c = '\a',
+	     .expected = "\a"},
+	    {.desc = "OWN TEST: ft_putchar('\b')",
+	     .c = '\b',
+	     .expected = "\b"},
+		{.desc = "OWN TEST: ft_putchar('\v')",
+	     .c = '\v',
+	     .expected = "\v"},
+		{.desc = "OWN TEST: ft_putchar('A')",
+	     .c = 'A',
+	     .expected = "A"},
+ 	    {.desc = "OWN TEST: ft_putchar('\'')",
+	     .c = '\'',
+	     .expected = "\'"}
 	    // Add more test cases here
 	};
 	int count = sizeof(tests) / sizeof(tests[0]);

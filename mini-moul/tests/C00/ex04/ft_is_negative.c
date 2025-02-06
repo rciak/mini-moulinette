@@ -21,7 +21,8 @@ int main(void)
             {.desc = "ft_is_negative(-115)", .n = -115, .expected = "N"},
             {.desc = "ft_is_negative(-2147483648)", .n = -2147483648, .expected = "N"},
             {.desc = "ft_is_negative(0)", .n = 0, .expected = "P"},
-            {.desc = "ft_is_negative(2147483647)", .n = 2147483647, .expected = "P"}
+            {.desc = "ft_is_negative(2147483647)", .n = 2147483647, .expected = "P"},
+			{.desc = "OWN TEST: ft_is_negative(-1)", .n = -1, .expected = "N"}
             // Add more test cases here
         };
         int count = sizeof(tests) / sizeof(tests[0]);
