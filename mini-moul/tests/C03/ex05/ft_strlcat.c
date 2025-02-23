@@ -19,11 +19,11 @@ int main(void)
 {
     t_test tests[] = {
         {
-            .desc = "Concatenate two strings",
-            .src = "Born to code",
-            .dest = "1337 42",
-            .size = 20,
-            .expected_output = "1337 42Born to code",
+            .desc = "C",
+            .src = "B",
+            .dest = "C",
+            .size = 3,
+            .expected_output = "CB",
         },
         {
             .desc = "Concatenate empty strings",
@@ -53,6 +53,13 @@ int main(void)
             .size = 10,
             .expected_output = "TestTest",
         },
+        {
+            .desc = "Concatenate two strings",
+            .src = "Born to code",
+            .dest = "1337 42",
+            .size = 20,
+            .expected_output = "1337 42Born to code",
+        },        
     };
     int count = sizeof(tests) / sizeof(tests[0]);
 
